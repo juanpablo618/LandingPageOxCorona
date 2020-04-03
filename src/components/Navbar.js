@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-import logo from "../images/logo.svg";
+
+import logo1 from "../images/oxCalidad.png";
 export default class Navbar extends Component {
   state = {
     isOpen: false
@@ -15,9 +16,7 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            <Link to="/">
-              <img src={logo} alt="CyO Turismo" />
-            </Link>
+              <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="40" height="40"  />
             <button
               type="button"
               className="nav-btn"
@@ -30,15 +29,10 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/rooms">Alojamientos</Link>
-            </li>
-            <li>
-              <Link to="/contacto">Contacto</Link>
+              <Link to="/contacto">Comunicación & Ventas</Link>
             </li>
           </ul>
+            
         </div>
       </nav>
     

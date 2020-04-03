@@ -5,9 +5,14 @@
 }
 :root {
   --primaryColor: #af9a7d;
+  --primaryColorWhatsapp: none;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
+  --realBlack: black;
+  --greenWhatsapp: #25D366;
+  --blueInscribite: #2B547E;
+  --greyMasInfo:  #D3D3D3;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
@@ -19,7 +24,7 @@
 body {
   padding-top: 66px;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  background: var(--mainblack);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -65,6 +70,48 @@ h6 {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.btn-whatsapp {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--greenWhatsapp);
+  background: var(--primaryColorWhatsapp);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColorWhatsapp);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primaryInscripcion {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--blueInscribite);
+  background: none;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColorWhatsapp);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.btn-primaryMasInfoCharlas {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--greyMasInfo);
+  background: none;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--darkGrey);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
@@ -93,7 +140,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: var(--offWhite);
+  background: var(--realBlack);
   z-index: 1;
 }
 .nav-header {
@@ -108,19 +155,25 @@ h6 {
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--mainWhite);
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+  
 }
 .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  
 }
 .nav-links a {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -128,7 +181,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: var(--mainWhite);
 }
 
 .show-nav {
@@ -158,26 +211,37 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/details-5.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
-  min-height: 60vh;
+  background-image: url("./images/details-5.jpeg");
 }
 /* End of Hero */
 /* Banner */
 .banner {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   padding: 2rem 1rem;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
+
+.banner2 {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  position: absolute;
+  right: 0px;
+  width: 600px;
+  
+}
+
 
 .banner p {
   text-transform: none;
@@ -322,7 +386,7 @@ h6 {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   padding: 0.3rem 0.6rem 0.5rem;
   border-bottom-right-radius: 1rem;
   font-size: 0.5rem;
@@ -515,3 +579,22 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+
+
+#firstText{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  font-weight: bold;
+
+}
+
+#fontLighter{
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+#aLaDerecha{
+  right: 0px !important;
+}
