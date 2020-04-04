@@ -216,10 +216,27 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+
+
+.roomsHeroRobot {
+  background-image: url("./images/robotImagen.jpg");
+}
+
+.roomsHeroRobot {
+  min-height: calc(100vh - 66px);
+  background: url("./images/robotImagen.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .roomsHero {
   background-image: url("./images/details-5.jpeg");
 }
 /* End of Hero */
+
+
 /* Banner */
 .banner {
   display: inline-block;
@@ -580,21 +597,143 @@ h6 {
 }
 /* end of rooms fitler*/
 
-
 #firstText{
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: x-large;
   font-weight: bold;
-
 }
 
+#firstTextCompleta{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 157px;
+}
+
+#fontLighterElSiguiente{
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 23px;
+  margin-top: 8px;
+}
 #fontLighter{
   font-weight: lighter;
   font-family: 'Courier New', Courier, monospace;
-  
+}
+
+#fontLighterSoloDebenCompletar{
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+#fontLighterLabel{
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  width: 80px;
+    
+}
+
+#fontLighterCharlas{
+  margin-left: 157px;
+  margin-top: 64px;  
+}
+
+#fontLighterLabelParaNombre{
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  width: -20px;
+
+}
+
+
+#fontLighterFacil{
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  margin: .5em .5em .5m 1em !important;
 }
 
 #aLaDerecha{
   right: 0px !important;
+}
+
+#email{
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#from_name{
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#telefono{
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#serviciosAdicionales{
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#empresa{
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#referido{
+  border-radius: 5px;
+  width: 393px;
+  margin-top: 5px;
+}
+
+#alineadoIzq{
+    float: left;
+
+}
+
+#centro{
+  float: none;
+}
+
+
+label{
+  display: inline-block;
+  width: 80px;
+}
+
+
+#izquierdaCharlas{
+  float: left;
+}
+
+#derechaCharlas{
+  float: right;
+  margin-right: 153px;
+  
+}
+
+#completaIzq{
+float: left;
+}
+
+#completaDerecha{
+float: right;
 }

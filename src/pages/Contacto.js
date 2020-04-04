@@ -22,7 +22,7 @@ const Contacto = () => {
           Consultános!
           </Link>
 
-          <img src={whatsappImage} alt="CyO Turismo" width="30" height="30" /><br></br>
+          <img src={whatsappImage} alt="ox landing page" width="30" height="30" /><br></br>
 
 
           <br></br>
