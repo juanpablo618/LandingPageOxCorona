@@ -10,6 +10,7 @@
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --realBlack: black;
+    --realRed: #C1272D;
   --greenWhatsapp: #25D366;
   --blueInscribite: #2B547E;
   --greyMasInfo:  #D3D3D3;
@@ -140,7 +141,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: var(--realBlack);
+  background: var(--realRed);
   z-index: 1;
 }
 .nav-header {
@@ -211,7 +212,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/details-5.jpeg") center/cover no-repeat;
+  background: url("./images/details-5.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,7 +233,7 @@ h6 {
 
 
 .roomsHero {
-  background-image: url("./images/details-5.jpeg");
+  background-image: url("./images/details-5.jpg");
 }
 /* End of Hero */
 
