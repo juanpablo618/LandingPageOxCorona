@@ -3,15 +3,17 @@ import { RoomContext } from "../context";
 import emailjs from 'emailjs-com';
 import Hero from "../components/Hero";
 import Banner from "./Banner";
+import imgNeni from "../images/BPMprofe.jpg";
+import imgCupo from "../images/cupolimitado.png";
 
 class ContactForm extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = {fIngreso: "", 
+    this.state = {fIngreso: "",
      fEgreso: "",
      from_name:"",
-     cantPersonas: "", 
+     cantPersonas: "",
      serviciosAdicionales: "",
      email: "",
      telefono: "",
@@ -20,10 +22,10 @@ class ContactForm extends React.Component {
   }
 
     componentDidMount() {
-    
+
     console.log(this.props.keyRoom);
     }
-  
+
   sendEmail(e,self) {
     e.preventDefault();
 
@@ -39,83 +41,55 @@ class ContactForm extends React.Component {
 
       });
   }
- 
+
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
- 
+
   static contextType = RoomContext;
 
   render() {
 
   return (
-      <Hero hero="roomsHeroRobot">
-        <Banner>
+      <Hero hero="formInscripcion">
+        <div id="imgNeni">
+           <img src={imgNeni} alt="profesor" id="imagenProfe"  width="80%" height="90%"/><br></br>
+        </div>
+        <div id="bannerNeni">
           <center>
-            
-            <form onSubmit={(e)=>this.sendEmail(e,this)}>
+            <form onSubmit={(e)=>this.sendEmail(e, this)}>
 
-            <p id="firstText">Quiero inscribirme !</p>
-            <br></br>
-            <p id="fontLighter">Es fácil y solo en 3 pasos !</p><br></br>
-            
-            <div>
-                <div id="completaIzq">
-                    <p id="firstTextCompleta">1. Completá</p>
-                </div>
-                <div id="completaDerecha">
-                  <p id="fontLighterElSiguiente">el siguiente formulario</p>
-                </div>
+            <div id="cabeceraFormulario">
+              <p id="firstText">Completa tus datos</p><br></br>
+              <p id="fontLighterNeni">INSCRIBITE YA!</p><br></br>
+
             </div>
-                  <br></br>
-                  <br></br>
-                <label id="fontLighterLabelParaNombre" htmlFor="from_name">Nombre y apellido:</label>
-                <input  id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br>
+            <div id="cupo">
+              <img src={imgCupo} alt="profesor" width="80%" height="80%"/>
+            </div>
+            <div id="formulario">
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <label id="fontLighterLabel" htmlFor="from_name">Nombre:</label>
+                <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
 
                 <label id="fontLighterLabel" htmlFor="from_name">Email:</label>
-                <input  id="email" name="email" required="false" onChange={this.handleFields}/><br></br>
+                <input  id="inputForm" name="email" required="false" onChange={this.handleFields}/><br></br>
 
                 <label id="fontLighterLabel" htmlFor="from_name">Teléfono:</label>
-                <input  id="telefono" name="telefono" required="true" onChange={this.handleFields}/><br></br>
+                <input  id="inputForm" name="telefono" required="true" onChange={this.handleFields}/><br></br>
 
-                <label id="fontLighterLabel" htmlFor="from_name">Empresa:</label>
-                <input  id="empresa" name="empresa" required="false" onChange={this.handleFields}/><br></br><br></br>
-                
+                <label id="fontLighterLabel" htmlFor="from_name">País:</label>
+                <input  id="inputForm" name="empresa" required="false" onChange={this.handleFields}/><br></br><br></br>
 
-                <div >  
-                  <div id="izquierdaCharlas">
-                  <label id="fontLighterCharlas" htmlFor="serviciosAdicionales">Charlas:</label><br></br>
-                  </div>
-                  
-                  <div id="derechaCharlas">
-                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-                      <label for="vehicle1"> Diseño Gráfico</label><br></br>
-                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-                      <label for="vehicle2"> Marketing y desarrollos webs</label><br></br>
-                  </div>
-                </div>
-                <br></br><br></br>
-                <br></br><br></br>
-                <br></br><br></br>
-                <br></br><br></br>
 
-                <p id="fontLighter" > También realizarenos un <strong>SUPER SORTEO</strong> con todos los participantes de la charla !</p> 
-
-                <p id="fontLighter">Para participar del sorteo escribí el nombre de la persona que compartió un mensaje o posteo de OX y vos lo pudiste ver !</p>
-
-                <input  id="referido" name="referido" required="false" onChange={this.handleFields}/><br></br>
-
-                <p id="fontLighterSoloDebenCompletar">solo deben completar este campo los que quieran participar del sorteo</p>
-
-                <p id="fontLighter">Selecciona enviar formulario para continuar</p>
-
-                <button type="submit" className="btn-primaryInscripcion">Enviar</button>
-            
+                <button type="submit" className="btn-primaryInscripcion">ENVIAR</button>
+            </div>
             </form>
+            </center>
           <br></br>
-          </center>
-        </Banner>
+
+        </div>
       </Hero>
     );
   }
 }
- 
+
 export default ContactForm;

@@ -89,15 +89,21 @@ h6 {
 }
 
 .btn-primaryInscripcion {
+  background-color: #C1272D;
   display: inline-block;
+  font-family: Bebas Neue;
+  font-size: 1.3em;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--blueInscribite);
-  background: none;
+  color: white;
+  float: right;
+  //background: none;
+  border-radius: 20px;
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColorWhatsapp);
+  border-color: black;
   transition: var(--mainTransition);
-  text-transform: uppercase;
+  //text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -164,15 +170,16 @@ h6 {
     right: 0px;
     width: 300px;
     padding: 10px;
-  
+
 }
 .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
-  margin-top: 3rem;
-  font-family: "Bebas Neue", Arial; 
+  margin-top: 3em;
+  font-family: "Bebas Neue", Arial, monospace;
+
 }
 .nav-links a {
   display: block;
@@ -184,7 +191,7 @@ h6 {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
-  font-family: "Bebas Neue", Arial; 
+  font-family: "Bebas Neue", Arial;
 }
 .nav-links a:hover {
   color: var(--mainWhite);
@@ -225,7 +232,7 @@ h6 {
 
 
 .roomsHeroRobot {
-  background-image: url("./images/robotImagen.jpg");
+  //background-image: url("./images/BPMprofe.jpg");
 }
 
 .roomsHeroRobot {
@@ -234,6 +241,25 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.imagenProfe{
+  float: left;
+}
+
+#cupo{
+  float: right;
+
+}
+
+.formInscripcion {
+  min-height: calc(100vh - 66px);
+  background: url("./images/BPMFONDO.png") right/cover no-repeat;
+  background-size: 50%;
+
+  display: flex;
+  align-items: center;
+
 }
 
 
@@ -245,6 +271,7 @@ h6 {
 
 /* Banner */
 .banner {
+
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainBlack);
@@ -261,8 +288,20 @@ h6 {
   position: absolute;
   right: 0px;
   bottom: -20px;
+  width: 600px;
 }
 
+
+.bannerNeni {
+
+  display: inline-block;
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+  width: 600px;
+}
 
 .banner p {
   text-transform: none;
@@ -601,9 +640,15 @@ h6 {
 }
 /* end of rooms fitler*/
 
+#cabeceraFormulario{
+  float: left;
+}
+
 #firstText{
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
+  float: left;
+  color: black;
+  align: center;
+  font-family: 'Georgia', Georgia, monospace;
   font-size: x-large;
   font-weight: bold;
 }
@@ -623,8 +668,19 @@ h6 {
   margin-top: 8px;
 }
 #fontLighter{
+  font-size: 3em;
+  color: red;
   font-weight: lighter;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', monospace;
+}
+#fontLighterNeni{
+  font-size: 3em;
+  color: #C1272D;
+  float: left;
+  font-weight: lighter;
+  font-family: 'Times New Roman', monospace;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 #fontLighterSoloDebenCompletar{
@@ -646,23 +702,30 @@ h6 {
 }
 
 #fontLighterLabel{
-  font-weight: lighter;
-  font-family: 'Courier New', Courier, monospace;
-  display: inline-block;
-  width: 80px;
-    
+
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: 'Georgia', Georgia, monospace;
+  display: -webkit-inline-box;
+  width: 160px;
+  margin-bottom: 15px;
 }
 
 #fontLighterCharlas{
   margin-left: 157px;
-  margin-top: 64px;  
+  margin-top: 64px;
+}
+
+#formulario {
+  margin-bottom: 130px;
 }
 
 #fontLighterLabelParaNombre{
-  font-weight: lighter;
-  font-family: 'Courier New', Courier, monospace;
-  display: inline-block;
-  width: -20px;
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: 'Georgia', Georgia, monospace;
+  display: inline;
+  width: -70px;
 
 }
 
@@ -685,6 +748,19 @@ h6 {
 #from_name{
   border-radius: 5px;
   margin-top: 5px;
+}
+
+#inputForm {
+  font-family: sans-serif;
+  width: 500px;
+  font-size: 1em;
+
+  border-radius: 10px;
+  background-color: #CECBCB;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 #telefono{
@@ -731,7 +807,7 @@ label{
 #derechaCharlas{
   float: right;
   margin-right: 153px;
-  
+
 }
 
 #completaIzq{
@@ -741,6 +817,7 @@ float: left;
 #completaDerecha{
 float: right;
 }
+
 
 #botonWhatsappYTexto{
   float:right;
