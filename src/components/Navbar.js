@@ -16,7 +16,7 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-              <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="150" height="100"  />
+              <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="130" height="100"  />
             <button
               type="button"
               className="nav-btn"
@@ -31,6 +31,10 @@ export default class Navbar extends Component {
             <li>
               <Link to="/contacto">VIRTUAL CLASSES</Link>
             </li>
+            <li>
+              <Link to="/contactForm">INSCRIBITE!</Link>
+            </li>
+            
           </ul>
             
         </div>
