@@ -4,6 +4,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import Contacto from "./pages/Contacto";
+import Profesor from "./pages/Profesor";
+
 import Reservations from "./pages/Reservations";
 import ContactForm from "./components/ContactForm";
 
@@ -22,6 +24,8 @@ function App() {
         <Route exact path="/" component={Contacto} />
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/contacto/" component={Contacto} />
+        <Route exact path="/profesor/" component={Profesor} />
+        
         <Route exact path="/reservations/:slug" component={Reservations} />
         <Route exact path="/contactForm/" component={ContactForm} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />

@@ -219,6 +219,16 @@ h6 {
     padding: 0.5rem 0;
   }
 }
+
+.profesorFondo {
+  min-height: calc(122vh - 66px);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* end of navbar */
 /* Hero */
 .defaultHero,
@@ -272,6 +282,16 @@ h6 {
 /* Banner */
 .banner {
 
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainBlack);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.bannerProfesor {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainBlack);
@@ -748,6 +768,19 @@ h6 {
 #from_name{
   border-radius: 5px;
   margin-top: 5px;
+}
+
+#inputForm {
+  font-family: sans-serif;
+  width: 500px;
+  font-size: 1em;
+
+  border-radius: 10px;
+  background-color: #CECBCB;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 #inputForm {

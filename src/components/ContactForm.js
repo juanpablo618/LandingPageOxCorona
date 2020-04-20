@@ -10,13 +10,11 @@ class ContactForm extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = {fIngreso: "",
-     fEgreso: "",
+    this.state = {
      from_name:"",
-     cantPersonas: "",
-     serviciosAdicionales: "",
      email: "",
      telefono: "",
+     pais:"",
      keyRoom: this.props.keyRoom
     };
   }
@@ -28,16 +26,16 @@ class ContactForm extends React.Component {
 
   sendEmail(e,self) {
     e.preventDefault();
-
-  emailjs.sendForm('gmail', 'template_czOUzjOc', e.target, 'user_58UT0Oeu5MmFFx61uWkmG')
+    console.log(e.target);
+  emailjs.sendForm('gmail', 'template_77X8UDWS', e.target, 'user_CxdcpQWVYQ1kSPRwKoOKm')
 
       .then((result) => {
           console.log(result.text);
-          alert("NOS PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Dudas: 0351-153220999.");  // display string message
+          alert("NOS PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Dudas: 0351-156237154. danzz.ar.class@gmail.com");  // display string message
 
       }, (error) => {
           console.log(error.text);
-          alert("No fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-153220999 / 0351-156744400.");  // display string message
+          alert("No fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-156237154. O también danzz.ar.class@gmail.com");  // display string message
 
       });
   }
@@ -71,13 +69,13 @@ class ContactForm extends React.Component {
                 <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
 
                 <label id="fontLighterLabel" htmlFor="from_name">Email:</label>
-                <input  id="inputForm" name="email" required="false" onChange={this.handleFields}/><br></br>
+                <input  id="inputForm" name="email" required="true" onChange={this.handleFields}/><br></br>
 
                 <label id="fontLighterLabel" htmlFor="from_name">Teléfono:</label>
                 <input  id="inputForm" name="telefono" required="true" onChange={this.handleFields}/><br></br>
 
                 <label id="fontLighterLabel" htmlFor="from_name">País:</label>
-                <input  id="inputForm" name="empresa" required="false" onChange={this.handleFields}/><br></br><br></br>
+                <input  id="inputForm" name="pais" required="true" onChange={this.handleFields}/><br></br><br></br>
 
 
                 <button type="submit" className="btn-primaryInscripcion">ENVIAR</button>

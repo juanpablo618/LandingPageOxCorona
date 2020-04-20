@@ -25,7 +25,7 @@ const Contacto = () => {
          <div id="botonWhatsappYTexto">
           
             
-            <a id="letrasBotonWhatsapp" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">CONTACTO WHATSAPP</a>
+            <a id="letrasBotonWhatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">CONTACTO WHATSAPP</a>
   
           <img src={whatsappImage} alt="ox landing page" width="40" height="40" /><br></br>
         </div>

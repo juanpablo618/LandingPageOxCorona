@@ -34,6 +34,9 @@ export default class Navbar extends Component {
             <li>
               <Link to="/contactForm">INSCRIBITE!</Link>
             </li>
+            <li>
+              <Link to="/profesor">DEL PROFE!</Link>
+            </li>
             
           </ul>
             
