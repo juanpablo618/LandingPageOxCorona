@@ -1,0 +1,17 @@
+Nuevo mensaje de {{{from_name}}}
+
+Nuevo mensaje de {{{from_name}}}
+
+
+sus datos son:
+
+ 
+
+EMAIL:  {{{email}}}
+ 
+
+TELEFONO: {{{telefono}}}
+
+ 
+
+PAIS: {{{pais}}}

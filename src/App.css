@@ -308,7 +308,7 @@ h6 {
   position: absolute;
   right: 0px;
   bottom: -20px;
-  width: 600px;
+  width: 1200px;
 }
 
 
@@ -851,9 +851,17 @@ float: left;
 float: right;
 }
 
+#primeros50Cupos{
+  float:left;
+  margin-left: 110px;
+  margin-bottom: 28px;
+
+}
 
 #botonWhatsappYTexto{
   float:right;
+  padding-top: 42px;
+
 }
 
 #letrasBotonWhatsapp{
@@ -861,5 +869,6 @@ float: right;
     background-color: white;
     border-radius: 25px;
     font-weight: bold;
-    font-family: inherit;
+    font-family: unset;
+ 
 }

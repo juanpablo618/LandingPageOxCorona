@@ -24,16 +24,19 @@ const Profesor = () => {
 
         <BannerProfesor>
         <br></br>
-        <div>
-        <br></br>
-          <iframe width="600" height="315" src="https://www.youtube.com/embed/v7XUMfI1juM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-        </div>
         
         <div id="botonWhatsappYTexto">
-          <img src={bannerOx} alt="horarios profesor" width="600" height="150" /><br></br>
+          <img src={bannerOx} alt="horarios profesor" width="1200" height="150" /><br></br>
         
-          <img src={profesorHorarios} alt="horarios profesor" width="600" height="300" /><br></br>
+          <img src={profesorHorarios} alt="horarios profesor" width="1200" height="300" /><br></br><br></br>
         </div>
+        <div>
+
+        <br></br>
+          <iframe width="1200" height="600" src="https://www.youtube.com/embed/v7XUMfI1juM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+        </div>
+        <br></br>
+        <br></br>
         </BannerProfesor>
 
       </Hero>

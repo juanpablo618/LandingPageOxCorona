@@ -65,7 +65,7 @@ class ContactForm extends React.Component {
             </div>
             <div id="formulario">
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-                <label id="fontLighterLabel" htmlFor="from_name">Nombre:</label>
+                <label id="fontLighterLabel" htmlFor="from_name">Nombre Y Apellido:</label>
                 <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
 
                 <label id="fontLighterLabel" htmlFor="from_name">Email:</label>
