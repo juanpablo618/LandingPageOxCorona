@@ -2,7 +2,7 @@ import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
 import room4 from "./images/details-4.jpeg";
-import room5 from "./images/details-5.jpg";
+import room5 from "./images/details-5.png";
 import room6 from "./images/details-6.jpeg";
 import room7 from "./images/details-7.jpeg";
 import room8 from "./images/details-8.jpeg";

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import RoomsContainer from "../components/RoomsContainer";
 import ReactLivestream from 'react-livestream'
 import whatsappImage from "../images/icons8-whatsapp-48.png";
-import primerosCupos from "../images/primeros50Cupos.png";
+//import ContactoWhatsapp2 from "../images/ContactoWhatsapp2.png";
 
 
 
@@ -19,10 +19,7 @@ const Contacto = () => {
     <>
       <Hero hero="roomsHero">
         <Banner>
-        <div id="primeros50Cupos">
-          <img src={primerosCupos} alt="ox landing page" width="80" height="80" /><br></br>
-        </div>
-
+        
          <div id="botonWhatsappYTexto">
             <a id="letrasBotonWhatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">CONTACTO WHATSAPP</a>
           <img src={whatsappImage} alt="ox landing page" width="40" height="40" /><br></br>

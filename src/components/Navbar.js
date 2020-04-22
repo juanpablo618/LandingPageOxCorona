@@ -29,13 +29,13 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link to="/contacto">VIRTUAL CLASSES</Link>
+              <Link id="fuenteBebaParaLink" to="/contacto">VIRTUAL CLASSES</Link>
             </li>
             <li>
-              <Link to="/contactForm">INSCRIBITE!</Link>
+              <Link id="fuenteBebaParaLink" to="/contactForm">INSCRIBITE!</Link>
             </li>
             <li>
-              <Link to="/profesor">DEL PROFE!</Link>
+              <Link id="fuenteBebaParaLink" to="/profesor">DEL PROFE!</Link>
             </li>
             
           </ul>

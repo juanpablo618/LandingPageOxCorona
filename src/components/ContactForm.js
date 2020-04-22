@@ -80,6 +80,13 @@ class ContactForm extends React.Component {
                 <button type="submit" className="btn-primaryInscripcion">ENVIAR</button>
             </div>
             </form>
+
+            <button><a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=226065572-23a1505e-f2e2-4860-823b-975fd7912b15">pagar</a></button>
+            <br>
+            </br>
+            <a mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=226065572-23a1505e-f2e2-4860-823b-975fd7912b15" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar</a>
+
+
             </center>
           <br></br>
 
