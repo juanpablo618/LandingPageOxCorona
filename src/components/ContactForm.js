@@ -2,7 +2,6 @@ import React from "react";
 import { RoomContext } from "../context";
 import emailjs from 'emailjs-com';
 import Hero from "../components/Hero";
-import Banner from "./Banner";
 import imgNeni from "../images/BPMprofe.jpg";
 import imgCupo from "../images/cupolimitado.png";
 
