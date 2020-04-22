@@ -1,10 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
+import ContactForm from "../components/ContactForm";
+
 import { Link } from "react-router-dom";
 import RoomsContainer from "../components/RoomsContainer";
 import ReactLivestream from 'react-livestream'
 import whatsappImage from "../images/icons8-whatsapp-48.png";
+import whatsappImageJuan from "../images/contactoWhatsappJuan.png";
+
 //import ContactoWhatsapp2 from "../images/ContactoWhatsapp2.png";
 
 
@@ -21,12 +25,18 @@ const Contacto = () => {
         <Banner>
         
          <div id="botonWhatsappYTexto">
-            <a id="letrasBotonWhatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">CONTACTO WHATSAPP</a>
-          <img src={whatsappImage} alt="ox landing page" width="40" height="40" /><br></br>
+            <a id="letrasBotonWhatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">
+            <img src={whatsappImageJuan} alt="ox landing page" width="204" height="66" />
+
+            </a>
+          
         </div>
         
         </Banner>
       </Hero>
+      <ContactForm>
+
+      </ContactForm>
 
     </>
   );

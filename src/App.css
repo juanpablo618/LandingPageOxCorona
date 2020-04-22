@@ -681,9 +681,10 @@ h6 {
   float: left;
   color: black;
   align: center;
-  font-family: 'Georgia', Georgia, monospace;
+  font-family: "miFuenteBeba";
   font-size: x-large;
   font-weight: bold;
+
 }
 
 #firstTextCompleta{
@@ -711,7 +712,7 @@ h6 {
   color: #C1272D;
   float: left;
   font-weight: lighter;
-  font-family: 'Times New Roman', monospace;
+  font-family: "miFuenteBeba";
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -741,6 +742,15 @@ h6 {
   font-family: "miFuenteBeba";
   display: -webkit-inline-box;
   width: 160px;
+  margin-bottom: 15px;
+}
+
+#fontLighterLabelBoton{
+
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: "miFuenteBeba";
+  display: -webkit-inline-box;
   margin-bottom: 15px;
 }
 

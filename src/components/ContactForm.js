@@ -76,16 +76,9 @@ class ContactForm extends React.Component {
                 <label id="fontLighterLabel" htmlFor="from_name">País:</label>
                 <input  id="inputForm" name="pais" required="true" onChange={this.handleFields}/><br></br><br></br>
 
-
-                <button type="submit" className="btn-primaryInscripcion">ENVIAR</button>
+                <button  id="fontLighterLabelBoton" type="submit" className="btn-primaryInscripcion">ENVIAR</button>
             </div>
             </form>
-
-            <button><a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=226065572-23a1505e-f2e2-4860-823b-975fd7912b15">pagar</a></button>
-            <br>
-            </br>
-            <a mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=226065572-23a1505e-f2e2-4860-823b-975fd7912b15" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar</a>
-
 
             </center>
           <br></br>
