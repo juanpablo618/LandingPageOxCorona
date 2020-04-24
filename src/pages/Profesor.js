@@ -14,27 +14,31 @@ import profesorHorarios from "../images/profesorHorarios.png";
 //tipografia color COLOR ROJO: #C1272D
 
 //<iframe width="560" height="315" src="https://www.youtube.com/embed/v7XUMfI1juM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
+
 const Profesor = () => {
   return (
     <>
 
-      
+
       <Hero hero="profesorFondo">
 
         <BannerProfesor>
         <br></br>
-        
+
         <div id="botonWhatsappYTexto">
           <img src={bannerOx} alt="horarios profesor" width="1200" height="150" /><br></br>
-        
+
           <img src={profesorHorarios} alt="horarios profesor" width="1200" height="300" /><br></br><br></br>
         </div>
         <div>
-
-        <br></br>
-          <iframe width="1200" height="600" src="https://www.youtube.com/embed/v7XUMfI1juM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+        <div>
+          <iframe id="chat" src="https://chat.chatzona.org/index.html#nick=&channel=DANZZAR.COM" width="350" height="600" frameborder="0" ></iframe>
         </div>
+
+          <iframe width="850" height="600" src="https://www.youtube.com/embed/v7XUMfI1juM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+        </div>
+
+
         <br></br>
         <br></br>
         </BannerProfesor>

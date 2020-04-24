@@ -12,11 +12,11 @@ export default class Navbar extends Component {
   };
   render() {
     return (
-      
+
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-              <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="160" height="79"  />
+              <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="160" height="80"  />
             <button
               type="button"
               className="nav-btn"
@@ -37,12 +37,12 @@ export default class Navbar extends Component {
             <li>
               <Link id="fuenteBebaParaLink" to="/profesor">DEL PROFE!</Link>
             </li>
-            
+
           </ul>
-            
+
         </div>
       </nav>
-    
+
     );
   }
 }

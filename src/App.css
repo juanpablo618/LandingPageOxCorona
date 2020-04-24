@@ -32,7 +32,7 @@ body {
   color: var(--mainBlack);
   background: var(--mainblack);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.4;
+
 }
 h1 {
   font-size: 3em;
@@ -152,7 +152,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.001rem 2rem;
   background: var(--realRed);
   z-index: 1;
 }
@@ -172,8 +172,6 @@ h6 {
     position: absolute;
     right: 0px;
     width: 300px;
-    padding: 10px;
-
 }
 
 #fuenteBebaParaLink{
@@ -188,7 +186,7 @@ h6 {
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
-  margin-top: 3em;
+  margin-top: 1.5em;
   font-family: "miFuenteBeba";
 
 }
@@ -227,7 +225,7 @@ h6 {
   }
   .nav-links a {
     margin: 0 1rem;
-    padding: 0.5rem 0;
+    padding: 0.1rem 0;
   }
 }
 
@@ -244,7 +242,7 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(122vh - 66px);
+  min-height: calc(100vh - 66px);
   background: url("./images/details-5.png") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -674,7 +672,7 @@ h6 {
 
 #cabeceraFormulario{
   float: left;
-  
+
 }
 
 #firstText{
@@ -891,10 +889,13 @@ float: right;
 
 #letrasBotonWhatsapp{
     color: black;
-    background-color: white;
     border-radius: 25px;
     font-weight: bold;
     font-family: "miFuenteBeba";
-    font-size: 30px;
+
+}
+
+#chat {
+  float: right;
 
 }
