@@ -11,9 +11,6 @@ import whatsappImageJuan from "../images/contactoWhatsappJuan.png";
 
 //import ContactoWhatsapp2 from "../images/ContactoWhatsapp2.png";
 
-
-
-
 //tipografia color COLOR ROJO: #C1272D
 
 //<iframe width="560" height="315" src="https://www.youtube.com/embed/v7XUMfI1juM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -18,8 +18,14 @@ export default class RoomProvider extends Component {
     minSize: 0,
     maxSize: 0,
     breakfast: false,
-    pets: false
+    pets: false,
+    urlDelVideo: "https://www.youtube.com/embed/v7XUMfI1juM"
   };
+
+    handler = (param) => {
+      this.setState({
+      urlDelVideo: param
+    })}
 
   // getData = async () => {
   //   try {
@@ -81,6 +87,23 @@ export default class RoomProvider extends Component {
     const room = tempRooms.find(room => room.slug === slug);
     return room;
   };
+
+  getUrlParaELVideo = slug => {
+    var urlParaElVideo = [...this.state.urlDelVideo];
+    
+    return urlParaElVideo;
+  };
+
+  setUrlParaELVideo = event => {
+    const target = event.target;
+    const value = target.value;
+    this.setState(
+      {
+        urlDelVideo: value
+      }
+    );
+  };
+
   handleChange = event => {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
@@ -94,6 +117,7 @@ export default class RoomProvider extends Component {
       this.filterRooms
     );
   };
+
   filterRooms = () => {
     let {
       rooms,
@@ -140,9 +164,11 @@ export default class RoomProvider extends Component {
   render() {
     return (
       <RoomContext.Provider
+        handler={this.handler}
         value={{
           ...this.state,
           getRoom: this.getRoom,
+          getUrlParaELVideo: this.getUrlParaELVideo,
           handleChange: this.handleChange
         }}
       >
@@ -158,7 +184,8 @@ export { RoomProvider, RoomConsumer, RoomContext };
 export function withRoomConsumer(Component) {
   return function ConsumerWrapper(props) {
     return (
-      <RoomConsumer>
+      <RoomConsumer handler={this.handler}
+      >
         {value => <Component {...props} context={value} />}
       </RoomConsumer>
     );
