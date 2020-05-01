@@ -2,27 +2,16 @@ import React from "react";
 import Hero from "../components/Hero";
 import SearchFinal from "../components/SearchFinal";
 import { AppContext } from "../appContext";
+import PlayerExample from "../components/PlayerExample";
 
 class ProfesorAdmin extends React.Component {
   render(){
-
-    const{
-      cambiarValorUrl,
-      videoURL,
-    } = this.context;
-
       return (
         <>
-           
-                <SearchFinal>
-                </SearchFinal>
-                
-                <a onClick={cambiarValorUrl} id="fontLighterLabelBoton" type="submit" className="btn-primaryInscripcion">TRANSMITIR !</a>
-          
+                <PlayerExample />
         </>
       );
   }  
-
 };
 
 ProfesorAdmin.contextType = AppContext;
