@@ -4,6 +4,11 @@ import Hero from "../components/Hero";
 import bannerOx from "../images/bannerOx.png";
 import profesorHorarios from "../images/profesorHorarios.png";
 import BannerProfesor from "../components/BannerProfesor";
+//import firebase from 'firebase/app';
+//import  {DB_CONFIG}  from '../config/config';
+
+import firebase from '../config/config';
+
 
 export default class PlayerExample extends Component {
   constructor(props, context) {
@@ -19,6 +24,18 @@ export default class PlayerExample extends Component {
     this.handleValueChangeForPassword = this.handleValueChangeForPassword.bind(this);
     
     this.updatePlayerInfo = this.updatePlayerInfo.bind(this);
+
+    console.log(firebase.name);
+    console.log("ACAAAAAAAAAAAAAAAAAAAAA");
+    console.log("ACA:::::::::::::::::::");
+    
+    console.log(firebase.database());
+    
+    const db = firebase.firestore()
+    const data =  db.collection("videos").get()
+   
+    
+    console.log("videos:::::::::::::::::::"+data.toString);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -41,8 +58,6 @@ export default class PlayerExample extends Component {
     });
   }
   
-
-
   updatePlayerInfo() {
     const { inputVideoUrl } = this.state;
     const { inputPassword } = this.state;

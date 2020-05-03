@@ -8,6 +8,7 @@
     "contentful": "^7.10.0",
     "csstools": "^0.1.5",
     "emailjs-com": "^2.4.1",
+    "firebase": "^7.14.2",
     "fs": "0.0.1-security",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
