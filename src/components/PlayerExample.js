@@ -25,18 +25,44 @@ export default class PlayerExample extends Component {
     
     this.updatePlayerInfo = this.updatePlayerInfo.bind(this);
 
-    console.log(firebase.name);
-    console.log("ACAAAAAAAAAAAAAAAAAAAAA");
-    console.log("ACA:::::::::::::::::::");
+    //console.log(firebase.name);
+    //console.log(firebase.database());
+    //var database = firebase.database();
+    //var ref = database.ref('/videos');
+    //console.log("REF: "+ref);
+
+    //ref.on('value', gotData, errData);
     
-    console.log(firebase.database());
+    //function gotData(data) {
+      //console.log(data.val());
+      
+      //console.log("VINO A GOTDATA");
+      
+    //}
     
-    const db = firebase.firestore()
-    const data =  db.collection("videos").get()
-   
-    
-    console.log("videos:::::::::::::::::::"+data.toString);
+    //function  errData(err) {
+    //  console.log('Error: '+err);
+    //}
   }
+
+ 
+componentDidMount(){
+  var database = firebase.database();
+  var ref = database.ref('/videos');
+   
+   ref.on('value', snap => {
+    console.log("ACAA"+ JSON.stringify(snap.val()));
+    console.log("ACAA PARSE"+ JSON.parse(JSON.stringify(snap.val())));
+   
+var obj = JSON.parse(JSON.stringify(snap.val()));
+console.log("URL DEL VIDEO: "+obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo);
+
+      this.setState({
+        playerSource: obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo
+      });
+    });
+    
+}
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.playerSource !== prevState.playerSource) {
@@ -89,33 +115,7 @@ export default class PlayerExample extends Component {
 
                 <div className="docs-example">
                   <Form>
-                    <FormGroup>
-                      <Label for="inputVideoUrl" id="labelPlayer">Url Del Video</Label>
-                      <Input
-                        name="inputVideoUrl"
-                        id="inputVideoUrl"
-                        value={this.state.inputVideoUrl}
-                        onChange={this.handleValueChange}
-                      />
-                      <Label for="inputVideoUrl" id="labelPlayer">Password</Label>
-                      
-                      <Input
-                        name="inputPassword"
-                        id="inputPassword"
-                        value={this.state.inputPassword}
-                        onChange={this.handleValueChangeForPassword}
-                      />
-
-                    </FormGroup>
-                    <FormGroup>
-                      
-                      <Button className="btn-primaryInscripcion-Left" type="button" onClick={this.updatePlayerInfo}>
-                        Actualizar
-                      </Button>
-
-                      
-
-                    </FormGroup>
+                    
                   </Form>
                 </div>
               </div>
