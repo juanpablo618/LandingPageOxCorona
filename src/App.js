@@ -20,7 +20,7 @@ function App() {
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/contacto/" component={Contacto} />
         <Route exact path="/profesor/" component={Profesor} />
-        <Route exact path="/profesorAdmin/" component={ProfesorAdmin} />
+        <Route exact path="/bpmgroup/" component={ProfesorAdmin} />
         <Route exact path="/reservations/:slug" component={Reservations} />
         <Route exact path="/contactForm/" component={ContactForm} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />

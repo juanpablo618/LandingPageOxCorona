@@ -35,7 +35,7 @@ export default class Navbar extends Component {
               <Link id="fuenteBebaParaLink" to="/contactForm">INSCRIBITE!</Link>
             </li>
             <li>
-              <Link id="fuenteBebaParaLink" to="/profesor">DEL PROFE!</Link>
+              <Link id="fuenteBebaParaLink" to="/bpmgroup">DEL PROFE!</Link>
             </li>
 
           </ul>
