@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-
+import imgFooter from "../images/Footer.png";
 import logo1 from "../images/oxCalidad.png";
 export default class Navbar extends Component {
   state = {
@@ -12,36 +12,33 @@ export default class Navbar extends Component {
   };
   render() {
     return (
-
-      <nav className="navbar">
-        <div className="nav-center">
-          <div className="nav-header">
-              <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="160" height="80"  />
-            <button
-              type="button"
-              className="nav-btn"
-              onClick={this.handleToggle}
-            >
-              <FaAlignRight className="nav-icon" />
-            </button>
-          </div>
+        <div className="navbar nav-center">
+        <table className="navbar nav-center">
+          <td>
           <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-          >
-            <li>
-              <Link id="fuenteBebaParaLink" to="/contacto">VIRTUAL CLASSES</Link>
+            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
+
+            <li id="Fright">
+              <Link id="fuenteBebaParaLink" to="/contacto">CLASES VIRTUALES</Link>
             </li>
-            <li>
-              <Link id="fuenteBebaParaLink" to="/contactForm">INSCRIBITE!</Link>
-            </li>
-            <li>
-              <Link id="fuenteBebaParaLink" to="/bpmgroup">DEL PROFE!</Link>
+          </ul>
+          </td>
+          <td>
+            <Link to="/contacto">
+                <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="65" height="40" />
+            </Link>
+          </td>
+          <td >
+          <ul
+            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
+            <li id="Fleft">
+            <Link id="fuenteBebaParaLink" to="/contactForm">INSCRIBITE</Link>
             </li>
 
           </ul>
-
+          </td>
+          </table>
         </div>
-      </nav>
 
     );
   }

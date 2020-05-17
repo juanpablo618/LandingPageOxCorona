@@ -2,8 +2,10 @@ import React from "react";
 import { RoomContext } from "../context";
 import emailjs from 'emailjs-com';
 import Hero from "../components/Hero";
-import imgNeni from "../images/BPMprofe.jpg";
 import imgCupo from "../images/cupolimitado.png";
+import Banner from "../components/Banner";
+import whatsappImageJuan from "../images/contactoWhatsappJuan.png";
+
 
 class ContactForm extends React.Component {
 
@@ -46,24 +48,21 @@ class ContactForm extends React.Component {
   render() {
 
   return (
+
       <Hero hero="formInscripcion">
-        <div id="imgNeni">
-           <img src={imgNeni} alt="profesor" id="imagenProfe"  width="80%" height="90%"/><br></br>
-        </div>
+
         <div id="bannerNeni">
-          <center>
+
             <form onSubmit={(e)=>this.sendEmail(e, this)}>
 
             <div id="cabeceraFormulario">
-              <p id="firstText">Completa tus datos</p><br></br>
-              <p id="fontLighterNeni">INSCRIBITE YA!</p><br></br>
-
+              <p id="firstText">Completa tus datos</p>
             </div>
-            <div id="cupo">
-              <img src={imgCupo} alt="profesor" width="80%" height="80%"/>
+            <div>
+              <p id="fontLighterNeni">INSCRIBITE YA!</p><br></br><br></br>
             </div>
             <div id="formulario">
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br><br></br>
                 <label id="fontLighterLabel" htmlFor="from_name">Nombre Y Apellido:</label>
                 <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
 
@@ -80,11 +79,20 @@ class ContactForm extends React.Component {
             </div>
             </form>
 
-            </center>
+
           <br></br>
 
         </div>
+        <Banner>
+         <div id="botonWhatsappYTexto">
+            <a target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">
+            <img src={whatsappImageJuan} alt="ox landing page" width="204" height="66" />
+            </a>
+        </div>
+
+        </Banner>
       </Hero>
+
     );
   }
 }

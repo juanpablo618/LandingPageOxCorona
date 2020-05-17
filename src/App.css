@@ -3,9 +3,19 @@
   src: url(../src/resources/BebasNeue-Regular.ttf);
 }
 
+@font-MyriadLightCondensed{
+  font-family: 'FuenteMyLC';
+  src: url(../src/resources/MyriadLightCondensed.ttf);
+}
+
+@font-MyriadLightCondensed{
+  font-family: 'FuenteMyProL';
+  src: url(../src/resources/MyriadPro-Light.ttf);
+}
+
+
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 :root {
@@ -15,7 +25,7 @@
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --realBlack: black;
-    --realRed: #C1272D;
+  --realRed: #C1272D;
   --greenWhatsapp: #25D366;
   --blueInscribite: #2B547E;
   --greyMasInfo:  #D3D3D3;
@@ -28,11 +38,10 @@
 }
 /* globals */
 body {
-  padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainblack);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  margin: 0;
 }
 h1 {
   font-size: 3em;
@@ -108,24 +117,24 @@ h6 {
   border-color: black;
   transition: var(--mainTransition);
   cursor: pointer;
-  
+
 }
 
 .btn-primaryInscripcion {
-  background-color: #C1272D;
+  background-color: Black;
   display: inline-block;
-  font-family: miFuenteBeba;
-  font-size: 1.3em;
+  font-family: FuenteMyProL;
+  font-size: 1.2em;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: white;
   float: right;
-  border-radius: 20px;
   padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColorWhatsapp);
-  border-color: black;
+  border: 2px solid;
+  border-color: white;
   transition: var(--mainTransition);
   cursor: pointer;
+  margin-right: 31%;
 }
 
 
@@ -147,10 +156,12 @@ h6 {
   background: transparent;
   color: var(--primaryColor);
 }
+
 .loading {
-  text-transform: capitalize;
-  text-align: center;
-  margin-top: 3rem;
+  min-height: calc(1vh - 0px);
+  display: inline;
+  align-items: center;
+  justify-content: center;
 }
 .error {
   text-align: center;
@@ -165,38 +176,47 @@ h6 {
 }
 /* end of globals */
 /* Navbar */
+table td{margin-left: 8%;
+  margin-right: 7%;
+  width: 100%;
+}
+
+.Fleft{
+  float: left;
+}
+
+.Fright{
+  float: right;
+}
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0.001rem 2rem;
-  background: var(--realRed);
-  z-index: 1;
+  background: var(--realBlack);
+  align-items: center;
+  background-color: rgba(0, 0, 0, .8);
 }
 .nav-header {
-  display: flex;
+
   justify-content: space-between;
+
 }
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
+  margin: 40px;
 }
-.nav-icon {
-  font-size: 1.5rem;
-  color: var(--mainWhite);
-    position: absolute;
-    right: 0px;
-    width: 300px;
-}
+
 
 #fuenteBebaParaLink{
-  font-family: "miFuenteBeba";
-  font-weight: bold;
-  font-size: 23px;
-
+  font-family: "FuenteMyLC";
+  font-size: 15px;
+  float: center;
 }
 
 .nav-links {
@@ -206,7 +226,7 @@ h6 {
   list-style-type: none;
   margin-top: 1.5em;
   font-family: "miFuenteBeba";
-
+  align-items: center;
 }
 .nav-links a {
   display: block;
@@ -232,14 +252,14 @@ h6 {
     display: none;
   }
   .nav-center {
-    max-width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
   }
   .nav-links {
     height: auto;
-    display: flex;
-    margin-left: 4rem;
+    display: contents;
+
   }
   .nav-links a {
     margin: 0 1rem;
@@ -260,13 +280,18 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(100vh - 66px);
-  background: url("./images/details-5.png") center/cover no-repeat;
+  min-height: calc(100vh - 100px);
+  background: url("./images/Banner1.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+
+
 }
 
+.Footer {
+  background: url("./images/Footer.png") center/cover no-repeat;
+}
 
 .roomsHeroRobot {
   //background-image: url("./images/BPMprofe.jpg");
@@ -282,27 +307,26 @@ h6 {
 
 .imagenProfe{
   float: left;
+  background-size: auto;
 }
 
 #cupo{
   float: right;
-
+  margin-right: 20%;
+  margin-top: 7%;
 }
 
 .formInscripcion {
-  min-height: calc(100vh - 66px);
-  background: url("./images/BPMFONDO.png") right/cover no-repeat;
-  background-size: 50%;
-  margin-top: 10px;
-
-  display: flex;
-  align-items: center;
-
+  min-height: calc(100vh - 0px);
+  background: url("./images/Banner2.png") right/cover no-repeat;
+  width: 100.2%;
+  display: list-item;
+  margin: -3px;
 }
 
 
 .roomsHero {
-  background-image: url("./images/details-5.png");
+
 }
 /* End of Hero */
 
@@ -335,17 +359,19 @@ h6 {
   padding: 2rem 1rem;
   position: absolute;
   right: 0px;
-  bottom: -20px;
-  width: 1200px;
+  bottom: 50px;
+  width: 250px;
 }
 
+.footer {
+  width: 100%;
+  height: 60%;
+}
 
 .bannerNeni {
-
-  display: inline-block;
+  display: list-item;
   color: var(--mainWhite);
   padding: 2rem 1rem;
-  position: absolute;
   right: 0px;
   bottom: -20px;
   width: 600px;
@@ -689,17 +715,15 @@ h6 {
 /* end of rooms fitler*/
 
 #cabeceraFormulario{
-  float: left;
-
+  margin-left: 30%;
+  padding-top: 90px;
 }
 
 #firstText{
   float: left;
-  color: black;
-  align: center;
-  font-family: "miFuenteBeba";
+  color: White;
+  font-family: "FuenteMyLC";
   font-size: x-large;
-  font-weight: bold;
 
 }
 
@@ -724,13 +748,14 @@ h6 {
   font-family: 'Times New Roman', monospace;
 }
 #fontLighterNeni{
-  font-size: 3em;
-  color: #C1272D;
-  float: left;
+  font-size: 2.5em;
+  color: white;
+  float: right;
   font-weight: lighter;
-  font-family: "miFuenteBeba";
+  font-family: "FuenteMyProL";
   margin-bottom: 30px;
-  margin-top: 10px;
+  margin-right: 49%;
+  margin-top: 0;
 }
 
 #fontLighterSoloDebenCompletar{
@@ -752,22 +777,18 @@ h6 {
 }
 
 #fontLighterLabel{
-
-  font-weight: bold;
-  font-size: 1.4em;
-  font-family: "miFuenteBeba";
+  font-size: 1.2em;
+  font-family: "FuenteMyLC";
   display: -webkit-inline-box;
   width: 160px;
   margin-bottom: 15px;
+  color: white;
 }
 
 #fontLighterLabelBoton{
 
-  font-weight: bold;
-  font-size: 1.4em;
-  font-family: "miFuenteBeba";
   display: -webkit-inline-box;
-  margin-bottom: 15px;
+
 }
 
 #fontLighterCharlas{
@@ -778,6 +799,7 @@ h6 {
 #formulario {
   margin-bottom: 130px;
   margin-top: 30px;
+  margin-left: 30%;
 
 }
 
@@ -798,7 +820,9 @@ h6 {
 }
 
 #aLaDerecha{
-  right: 0px !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
 #email{
@@ -811,30 +835,21 @@ h6 {
   margin-top: 5px;
 }
 
-#inputForm {
-  font-family: sans-serif;
-  width: 500px;
-  font-size: 1em;
-
-  border-radius: 10px;
-  background-color: #CECBCB;
-  margin-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
+input {
+        color: #fff;
+        background-color: rgba(0, 0, 0, .1);
+        border:0;
+        outline: none;
+        opacity: 0.9;
+        border-bottom:2px solid #fff;
+    }
 
 #inputForm {
   font-family: sans-serif;
   width: 500px;
   font-size: 1em;
-
-  border-radius: 10px;
-  background-color: #CECBCB;
-  margin-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  opacity: 0.9;
+  color: white;
 }
 
 #telefono{
@@ -900,17 +915,12 @@ float: right;
 }
 
 #botonWhatsappYTexto{
-  float:right;
-  padding-top: 42px;
-
+  float: right;
+  position: fixed;
 }
 
-#letrasBotonWhatsapp{
-    color: black;
-    border-radius: 25px;
-    font-weight: bold;
-    font-family: "miFuenteBeba";
-
+.letrasBotonWhatsapp {
+  margin: -20%;
 }
 
 #chat {

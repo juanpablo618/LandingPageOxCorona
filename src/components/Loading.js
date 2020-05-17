@@ -1,10 +1,12 @@
 import React from "react";
-import loadingGif from "../images/gif/loading-arrow.gif";
+import loadingGif from "../images/Footer.png";
+
+
 const Loading = () => {
   return (
-    <div className="loading">
-      <h4>se están cargando los alojamientos....</h4>
-      <img src={loadingGif} alt="" />
+
+    <div className="loading ">
+      <img src={loadingGif} />
     </div>
   );
 };
