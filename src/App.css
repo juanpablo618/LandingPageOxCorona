@@ -3,17 +3,15 @@
   src: url(../src/resources/BebasNeue-Regular.ttf);
 }
 
-@font-MyriadLightCondensed{
+@font-face{
   font-family: 'FuenteMyLC';
   src: url(../src/resources/MyriadLightCondensed.ttf);
 }
 
-@font-MyriadLightCondensed{
+@font-face{
   font-family: 'FuenteMyProL';
   src: url(../src/resources/MyriadPro-Light.ttf);
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -294,7 +292,7 @@ table td{margin-left: 8%;
 }
 
 .roomsHeroRobot {
-  //background-image: url("./images/BPMprofe.jpg");
+  background-image: url("./images/BPMprofe.jpg");
 }
 
 .roomsHeroRobot {

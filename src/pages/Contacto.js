@@ -3,11 +3,8 @@ import Hero from "../components/Hero";
 import Loading from "../components/Loading";
 import Banner from "../components/Banner";
 import ContactForm from "../components/ContactForm";
-import { Link } from "react-router-dom";
-import RoomsContainer from "../components/RoomsContainer";
-import ReactLivestream from 'react-livestream'
-import whatsappImage from "../images/icons8-whatsapp-48.png";
 import whatsappImageJuan from "../images/contactoWhatsappJuan.png";
+import DemoCarousel from "../components/DemoCarousel";
 
 //import ContactoWhatsapp2 from "../images/ContactoWhatsapp2.png";
 
@@ -19,9 +16,10 @@ const Contacto = () => {
   return (
     <>
 
-      <Hero hero="roomsHero">
-      
-        <Banner>
+      <DemoCarousel>
+
+
+      <Banner>
          <div id="botonWhatsappYTexto">
             <a target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">
             <img src={whatsappImageJuan} alt="ox landing page" width="204" height="66" />
@@ -30,7 +28,7 @@ const Contacto = () => {
 
         </Banner>
 
-      </Hero>
+      </DemoCarousel>
       <Loading></Loading>
       <ContactForm>
 
