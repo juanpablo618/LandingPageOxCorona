@@ -5,8 +5,12 @@ import { Carousel } from 'react-responsive-carousel';
 
 class DemoCarousel extends Component {
     render() {
+
         return (
-            <Carousel>
+
+            <Carousel infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={1000}>
                 <div>
                     <img src="../images/Banner1.png" />
                 </div>

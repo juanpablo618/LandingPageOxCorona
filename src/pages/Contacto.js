@@ -15,24 +15,20 @@ import DemoCarousel from "../components/DemoCarousel";
 const Contacto = () => {
   return (
     <>
-
+    <div class="screnComplete" >
       <DemoCarousel>
-
-
       <Banner>
          <div id="botonWhatsappYTexto">
             <a target="_blank" href="https://web.whatsapp.com/send?phone=+5493516237154&text=Hola!%20Quiero%20informacion%20sobre%20ClasesDeBaileDanzzar">
             <img src={whatsappImageJuan} alt="ox landing page" width="204" height="66" />
             </a>
         </div>
-
         </Banner>
 
       </DemoCarousel>
       <Loading></Loading>
-      <ContactForm>
-
-      </ContactForm>
+      </div>
+      <ContactForm></ContactForm>
 
     </>
   );
