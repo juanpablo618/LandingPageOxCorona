@@ -9,7 +9,7 @@ import banner3 from "../images/Banner3.png";
 class DemoCarousel extends Component {
     render() {
         return (
-            <Carousel>
+            <Carousel >
                 <div>
                     <img src={banner1} />
                 </div>

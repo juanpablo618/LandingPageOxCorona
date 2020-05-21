@@ -164,6 +164,7 @@ h6 {
   display: inline;
   align-items: center;
   justify-content: center;
+  
 }
 .error {
   text-align: center;
@@ -294,6 +295,7 @@ table td{margin-left: 8%;
 
 .Footer {
   background: url("./images/Footer.png") center/cover no-repeat;
+  
 }
 
 .roomsHeroRobot {
@@ -761,7 +763,9 @@ table td{margin-left: 8%;
   margin-top: 0;
 }
 
-.screnComplete{height: 80%;}
+.screnComplete{
+  height: 80%;
+}
 
 #fontLighterSoloDebenCompletar{
   font-weight: lighter;
@@ -964,4 +968,8 @@ float: right;
   padding-bottom: 5px;
   margin-bottom: 15px;
 
+}
+
+#footerText img{
+  width: 100%;
 }

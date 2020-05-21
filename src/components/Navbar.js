@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { FaAlignRight } from "react-icons/fa";
-import imgFooter from "../images/Footer.png";
 import logo1 from "../images/oxCalidad.png";
 export default class Navbar extends Component {
   state = {

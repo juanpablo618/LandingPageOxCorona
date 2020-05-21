@@ -26,7 +26,11 @@ const Contacto = () => {
         </Banner>
 
       </DemoCarousel>
-      <Loading></Loading>
+
+      <div id="footerText">
+         
+        <Loading></Loading>
+      </div>
       </div>
       <ContactForm></ContactForm>
 
