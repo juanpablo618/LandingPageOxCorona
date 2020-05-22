@@ -52,6 +52,7 @@ class ContactForm extends React.Component {
       <Hero hero="formInscripcion">
 
         <div id="bannerNeni">
+          <div class="container">
 
             <form onSubmit={(e)=>this.sendEmail(e, this)}>
 
@@ -63,21 +64,47 @@ class ContactForm extends React.Component {
             </div>
             <div id="formulario">
                 <br></br><br></br><br></br><br></br><br></br>
-                <label id="fontLighterLabel" htmlFor="from_name">Nombre Y Apellido:</label>
-                <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
+                <div class="row">
+                  <div class="col-25">
+                    <label id="fontLighterLabel" htmlFor="from_name">Nombre Y Apellido:</label>
+                  </div>
+                  <div class="col-25">
+                    <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label id="fontLighterLabel" htmlFor="from_name">Email:</label>
+                  </div>              
+                  <div class="col-25">
+                    <input  id="inputForm" name="email" required="true" onChange={this.handleFields}/><br></br>
+                  </div>                
+                </div>
+                
+                <div class="row">
+                  <div class="col-25">
+                    <label id="fontLighterLabel" htmlFor="from_name">Teléfono:</label>
+                  </div>
+                  <div class="col-25">
+                    <input  id="inputForm" name="telefono" required="true" onChange={this.handleFields}/><br></br>
+                  </div>
+                </div>
 
-                <label id="fontLighterLabel" htmlFor="from_name">Email:</label>
-                <input  id="inputForm" name="email" required="true" onChange={this.handleFields}/><br></br>
+                <div class="row">
+                <div class="col-25">
 
-                <label id="fontLighterLabel" htmlFor="from_name">Teléfono:</label>
-                <input  id="inputForm" name="telefono" required="true" onChange={this.handleFields}/><br></br>
-
-                <label id="fontLighterLabel" htmlFor="from_name">País:</label>
-                <input  id="inputForm" name="pais" required="true" onChange={this.handleFields}/><br></br><br></br>
-
+                  <label id="fontLighterLabel" htmlFor="from_name">País:</label>
+                  </div>
+                  <div class="col-25">
+                    <input  id="inputForm" name="pais" required="true" onChange={this.handleFields}/><br></br><br></br>
+                  </div>
+                </div>
+                <div class="row">
                 <button  id="fontLighterLabelBoton" type="submit" className="btn-primaryInscripcion">ENVIAR</button>
+                  </div>
             </div>
             </form>
+            </div>
 
 
           <br></br>

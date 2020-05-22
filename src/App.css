@@ -136,7 +136,7 @@ h6 {
   border-color: white;
   transition: var(--mainTransition);
   cursor: pointer;
-  margin-right: 31%;
+  margin-right: 50%;
 }
 
 
@@ -855,7 +855,7 @@ input {
 
 #inputForm {
   font-family: sans-serif;
-  width: 500px;
+  width: 100%;
   font-size: 1em;
   opacity: 0.9;
   color: white;
@@ -972,4 +972,33 @@ float: right;
 
 #footerText img{
   width: 100%;
+}
+
+
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25% !important;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
