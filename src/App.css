@@ -1,3 +1,53 @@
+@media only screen and (max-width: 700px) {
+body{
+  background: url("./images/Mobile.png") center/cover no-repeat;
+  min-width: 100%;}
+.carousel-root, #footerText{
+  display: none;
+}
+
+div#cabeceraFormulario {
+    margin-left: 2%;
+    padding-top: 15%;
+}
+
+p#fontLighterNeni{
+
+}
+
+#cabeceraFormulario{
+  padding-top: 20%;
+}
+
+#botonWhatsappYTexto a img{
+content:url("./images/contactoMobile.png");
+width: auto;
+float: right;
+}
+
+header.formInscripcion {
+
+  background: url("./images/Banner2M.png") right/cover no-repeat;
+}
+#fontLighterLabelBoton{
+  float: none;
+}
+
+.banner2 {
+  direction: rtl;
+}
+
+div#formulario, .col-75{
+  display: block;
+  margin-right: 0;
+  margin-inline-start:auto;
+}
+.col-25{
+  display: contents;
+}
+
+}
+
 @font-face{
   font-family: 'miFuenteBeba';
   src: url(../src/resources/BebasNeue-Regular.ttf);
@@ -164,7 +214,7 @@ h6 {
   display: inline;
   align-items: center;
   justify-content: center;
-  
+
 }
 .error {
   text-align: center;
@@ -295,7 +345,7 @@ table td{margin-left: 8%;
 
 .Footer {
   background: url("./images/Footer.png") center/cover no-repeat;
-  
+
 }
 
 .roomsHeroRobot {
