@@ -68,24 +68,24 @@ class ContactForm extends React.Component {
                   <div class="col-25">
                     <label id="fontLighterLabel" htmlFor="from_name">Nombre Y Apellido:</label>
                   </div>
-                  <div class="col-25">
+                  <div class="col-75">
                     <input  id="inputForm" name="from_name" required="true" onChange={this.handleFields}/><br></br>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-25">
                     <label id="fontLighterLabel" htmlFor="from_name">Email:</label>
-                  </div>              
-                  <div class="col-25">
+                  </div>
+                  <div class="col-75">
                     <input  id="inputForm" name="email" required="true" onChange={this.handleFields}/><br></br>
-                  </div>                
+                  </div>
                 </div>
-                
+
                 <div class="row">
                   <div class="col-25">
                     <label id="fontLighterLabel" htmlFor="from_name">Teléfono:</label>
                   </div>
-                  <div class="col-25">
+                  <div class="col-75">
                     <input  id="inputForm" name="telefono" required="true" onChange={this.handleFields}/><br></br>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ class ContactForm extends React.Component {
 
                   <label id="fontLighterLabel" htmlFor="from_name">País:</label>
                   </div>
-                  <div class="col-25">
+                  <div class="col-75">
                     <input  id="inputForm" name="pais" required="true" onChange={this.handleFields}/><br></br><br></br>
                   </div>
                 </div>

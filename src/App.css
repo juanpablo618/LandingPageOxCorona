@@ -37,6 +37,10 @@ header.formInscripcion {
   direction: rtl;
 }
 
+input#inputForm{
+  width: 130%;
+}
+
 div#formulario, .col-75{
   display: block;
   margin-right: 0;
@@ -186,7 +190,7 @@ h6 {
   border-color: white;
   transition: var(--mainTransition);
   cursor: pointer;
-  margin-right: 50%;
+  margin-right: 10%;
 }
 
 
@@ -825,7 +829,6 @@ table td{margin-left: 8%;
 
 .col-25 {
   float: left;
-  width: 25%;
   margin-top: 6px;
 }
 
@@ -1035,8 +1038,12 @@ float: right;
 /* Floating column for labels: 25% width */
 .col-25 {
   float: left;
-  width: 25% !important;
   margin-top: 6px;
+}
+
+input:-internal-autofill-selected {
+  color: none;
+  opacity: 0.9;
 }
 
 /* Floating column for inputs: 75% width */
