@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../components/Hero";
 import Loading from "../components/Loading";
 import Banner from "../components/Banner";
 import ContactForm from "../components/ContactForm";

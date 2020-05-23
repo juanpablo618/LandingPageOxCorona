@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import {  Form } from 'reactstrap';
 import Hero from "../components/Hero";
 import bannerOx from "../images/bannerOx.png";
 import profesorHorarios from "../images/profesorHorarios.png";
