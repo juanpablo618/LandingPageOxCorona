@@ -6,6 +6,15 @@ body{
   display: none;
 }
 
+a.linkWA{
+  display: none;
+}
+
+a.linkWAM{
+  display: block;
+}
+
+
 div#cabeceraFormulario {
     margin-left: 2%;
     padding-top: 15%;
@@ -1058,4 +1067,8 @@ input:-internal-autofill-selected {
   content: "";
   display: table;
   clear: both;
+}
+
+.linkWAM{
+  display: none;
 }
