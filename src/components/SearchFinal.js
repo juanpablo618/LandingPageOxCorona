@@ -1,5 +1,5 @@
 import React from "react";
-import { AppContext, AppContextProvider } from "../appContext";
+import { AppContext} from "../appContext";
 
 class SearchFinal extends React.Component{
 
