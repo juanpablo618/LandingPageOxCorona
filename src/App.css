@@ -11,7 +11,7 @@ img#bannerImg1{content:url("./images/MBanner1.png");}
 
 img#bannerImg2{content:url("./images/MBanner2.png");}
 
-img#aLaDerecha{margin-bottom: 1%; margin-top: 1%;margin-left: 0%;}
+img#aLaDerecha{margin-bottom: 5%; margin-top: 5%;margin-left: 0%;}
 
 a.linkWA{
   display: none;
