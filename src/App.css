@@ -1,10 +1,17 @@
+
 @media only screen and (max-width: 700px) {
 body{
   background: url("./images/Mobile.png") center/cover no-repeat;
   min-width: 100%;}
-.carousel-root, #footerText{
+/*.carousel-root, #footerText{
   display: none;
-}
+}*/
+
+img#bannerImg1{content:url("./images/MBanner1.png");}
+
+img#bannerImg2{content:url("./images/MBanner2.png");}
+
+div.carousel-root{height: 80%;}
 
 a.linkWA{
   display: none;
