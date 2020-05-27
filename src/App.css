@@ -11,7 +11,7 @@ img#bannerImg1{content:url("./images/MBanner1.png");}
 
 img#bannerImg2{content:url("./images/MBanner2.png");}
 
-div.carousel-root{height: 80%;}
+img#aLaDerecha{margin-bottom: 1%; margin-top: 1%;}
 
 a.linkWA{
   display: none;
@@ -900,7 +900,7 @@ table td{margin-left: 8%;
 #aLaDerecha{
   margin-top: 10px;
   margin-bottom: 10px;
-
+  margin-left: 20%;
 }
 
 #email{

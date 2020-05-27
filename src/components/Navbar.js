@@ -23,7 +23,7 @@ export default class Navbar extends Component {
           </td>
           <td>
             <Link to="/contacto">
-                <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="85" height="60" />
+                <img id="aLaDerecha" src={logo1} alt="Ox Comunicación y Ventas" width="60" height="60" />
             </Link>
           </td>
           <td >
