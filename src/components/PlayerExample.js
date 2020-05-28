@@ -22,7 +22,7 @@ export default class PlayerExample extends Component {
 
     this.handleValueChange = this.handleValueChange.bind(this);
     this.handleValueChangeForPassword = this.handleValueChangeForPassword.bind(this);
-    
+
     this.updatePlayerInfo = this.updatePlayerInfo.bind(this);
 
     //console.log(firebase.name);
@@ -32,28 +32,28 @@ export default class PlayerExample extends Component {
     //console.log("REF: "+ref);
 
     //ref.on('value', gotData, errData);
-    
+
     //function gotData(data) {
       //console.log(data.val());
-      
+
       //console.log("VINO A GOTDATA");
-      
+
     //}
-    
+
     //function  errData(err) {
     //  console.log('Error: '+err);
     //}
   }
 
- 
+
 componentDidMount(){
   var database = firebase.database();
   var ref = database.ref('/videos');
-   
+
    ref.on('value', snap => {
     console.log("ACAA"+ JSON.stringify(snap.val()));
     console.log("ACAA PARSE"+ JSON.parse(JSON.stringify(snap.val())));
-   
+
 var obj = JSON.parse(JSON.stringify(snap.val()));
 console.log("URL DEL VIDEO: "+obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo);
 
@@ -61,7 +61,7 @@ console.log("URL DEL VIDEO: "+obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo);
         playerSource: obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo
       });
     });
-    
+
 }
 
   componentDidUpdate(prevProps, prevState) {
@@ -83,12 +83,12 @@ console.log("URL DEL VIDEO: "+obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo);
       inputPassword: value
     });
   }
-  
+
   updatePlayerInfo() {
     const { inputVideoUrl } = this.state;
     const { inputPassword } = this.state;
-    
-    if(inputPassword === "juan"){  
+
+    if(inputPassword === "juan"){
         this.setState({
           playerSource: inputVideoUrl
         });
@@ -99,27 +99,27 @@ console.log("URL DEL VIDEO: "+obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo);
     return (
       <Hero hero="profesorFondo">
         <BannerProfesor>
-                
+
               <br></br>
-                  <div id="botonWhatsappYTexto">
+                  <div id="bannerProfeWeb">
                     <img src={bannerOx} alt="horarios profesor" width="1200" height="150" /><br></br>
                     <img src={profesorHorarios} alt="horarios profesor" width="1200" height="300" /><br></br><br></br>
                   </div>
-                
+
                 <div>
                 <div>
                 <iframe id="chat" src="https://chat.chatzona.org/index.html#nick=&channel=DANZZAR.COM" width="350" height="600" frameborder="0" ></iframe>
               </div>
-              
+
                 <iframe width="850" height="600" src={this.state.playerSource} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
 
                 <div className="docs-example">
                   <Form>
-                    
+
                   </Form>
                 </div>
               </div>
-      </BannerProfesor> 
+      </BannerProfesor>
       </Hero>
     );
   }
