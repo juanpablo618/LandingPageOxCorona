@@ -20,16 +20,16 @@ class ClaseDelProfesor extends React.Component {
     <>
       <Hero hero="profesFondo">
         <BannerProfesor>
-        <br></br>
+          <br></br>
           <div id="bannerProfeWeb">
             <img src={bannerOx} id="danzarBanner"/><br></br>
             <img src={profesorHorarios} id="horarios" /><br></br><br></br>
           </div>
 
-          <div>
+          <div id="videoStrem">
             <iframe id="videoStrem" src={videoURL} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </div>
-          <div id="chatSala">
+          <div class="chatSala">
             <iframe width="900" height="450" src="https://chat.chatzona.org/index.html#nick=&channel=DANZZAR.COM" frameborder="0" ></iframe>
           </div>
 
