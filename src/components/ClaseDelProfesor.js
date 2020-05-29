@@ -5,10 +5,11 @@ import bannerOx from "../images/bannerOx.png";
 import profesorHorarios from "../images/profeHorarios.png";
 import { RoomContext } from "../context";
 import { AppContext } from "../appContext";
+import PlayerExample from "../components/PlayerExample";
 
 class ClaseDelProfesor extends React.Component {
 
-    static contextType = RoomContext;
+      static contextType = RoomContext;
     render(){
       const {
         videoURL,
@@ -25,10 +26,8 @@ class ClaseDelProfesor extends React.Component {
             <img src={bannerOx} id="danzarBanner"/><br></br>
             <img src={profesorHorarios} id="horarios" /><br></br><br></br>
           </div>
+          <PlayerExample/>
 
-          <div id="videoStrem">
-            <iframe id="videoStrem" src={videoURL} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-          </div>
           <div class="chatSala">
             <iframe width="900" height="450" src="https://chat.chatzona.org/index.html#nick=&channel=DANZZAR.COM" frameborder="0" ></iframe>
           </div>

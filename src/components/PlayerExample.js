@@ -15,8 +15,8 @@ export default class PlayerExample extends Component {
     super(props, context);
 
     this.state = {
-      playerSource: 'https://www.youtube.com/embed/v7XUMfI1juM',
-      inputVideoUrl: 'https://www.youtube.com/embed/v7XUMfI1juM',
+      playerSource: 'https://www.youtube.com/embed/qWf-FPFmVw0',
+      inputVideoUrl: 'https://www.youtube.com/embed/qWf-FPFmVw0',
       inputPassword: ''
     };
 
@@ -97,30 +97,11 @@ console.log("URL DEL VIDEO: "+obj["4pO74zbQa2Qfaft0tl4i"].urlDelVideo);
 
   render() {
     return (
-      <Hero hero="profesorFondo">
-        <BannerProfesor>
 
-              <br></br>
-                  <div id="bannerProfeWeb">
-                    <img src={bannerOx} alt="horarios profesor" width="1200" height="150" /><br></br>
-                    <img src={profesorHorarios} alt="horarios profesor" width="1200" height="300" /><br></br><br></br>
-                  </div>
-
-                <div>
-                <div>
-                <iframe id="chat" src="https://chat.chatzona.org/index.html#nick=&channel=DANZZAR.COM" width="350" height="600" frameborder="0" ></iframe>
+              <div class="videoStrem">
+                <iframe id="videoStrem" src={this.state.playerSource} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
               </div>
 
-                <iframe width="850" height="600" src={this.state.playerSource} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-
-                <div className="docs-example">
-                  <Form>
-
-                  </Form>
-                </div>
-              </div>
-      </BannerProfesor>
-      </Hero>
     );
   }
 }

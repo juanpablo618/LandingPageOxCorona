@@ -6,6 +6,9 @@ body{
 /*.carousel-root, #footerText{
   display: none;
 }*/
+.videoStrem #videoStrem {
+    height: 300px;
+  }
 
 div.chatSala iframe{
     height: 480px;
@@ -23,6 +26,7 @@ div #videoStrem iframe {
     margin-left: 2%;
     margin-right: 2%;
     height: auto;
+    border-style: dashed;
 }
 
 img#bannerImg1{content:url("./images/MBanner1.png");}
