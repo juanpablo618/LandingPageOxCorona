@@ -12,6 +12,7 @@ div.chatSala iframe{
     margin-left: 3%;
     margin-right: 3%;
     width: -webkit-fill-available;
+    margin-bottom: 2%;
 }
 #bannerProfeWeb{width: 100%;height: 100%;}
 header.profesFondo{width: 100%;height: -webkit-fill-available;}
