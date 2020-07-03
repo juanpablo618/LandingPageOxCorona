@@ -112,10 +112,10 @@ class ContactForm extends React.Component {
         <Banner>
          <div id="botonWhatsappYTexto">
             <a target="_blank" class="linkWA" href="https://web.whatsapp.com/send?phone=+5493517328452&text=Hola!%20Quiero%20informacion%20sobre%20Clases%20De%20Baile%20Danzzar">
-              <img src={whatsappImageJuan} alt="ox landing page" width="204" height="66" />
+              <img src={whatsappImageJuan} alt="Danzzar clases de baile" width="204" height="66" />
             </a>
             <a class="linkWAM" href="https://api.whatsapp.com/send?phone=+5493517328452&text=Hola!%20Quiero%20informacion%20sobre%20Clases%20De%20Baile%20Danzzar">
-              <img src={whatsappImageJuan} alt="ox landing page" width="204" height="66" />
+              <img src={whatsappImageJuan} alt="Danzzar clases de baile" width="204" height="66" />
             </a>
         </div>
 
